@@ -59,7 +59,7 @@ h1 { font-size: clamp(42px, 6vw, 72px); line-height: .96; margin: 0 0 22px; lett
   box-shadow: 0 28px 70px rgba(0,0,0,.38);
 }
 .hero-card img {
-    width: 100%;
+    width: 125%;
     height: auto;
     border-radius: 20px;
 }
