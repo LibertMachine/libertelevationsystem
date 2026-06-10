@@ -58,7 +58,11 @@ h1 { font-size: clamp(42px, 6vw, 72px); line-height: .96; margin: 0 0 22px; lett
   border: 1px solid var(--line); border-radius: 28px; padding: 12px;
   box-shadow: 0 28px 70px rgba(0,0,0,.38);
 }
-.hero-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 20px; }
+.hero-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 .caption { padding: 14px 8px 4px; color: var(--muted); font-size: 14px; }
 .section-title { font-size: clamp(32px, 4vw, 48px); line-height: 1.05; margin: 0 0 14px; letter-spacing: -0.04em; }
 .section-copy { color: var(--muted); max-width: 800px; margin: 0 0 28px; font-size: 18px; }
