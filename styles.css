@@ -171,4 +171,7 @@ footer a { color:var(--accent-2); }
   .cta { padding: 28px; }
   .catalog-item { grid-template-columns:1fr; }
   .form-grid { grid-template-columns:1fr; }
+  textarea {
+  grid-column: span 1;
+}
 }
