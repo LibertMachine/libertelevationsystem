@@ -68,6 +68,7 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   width: 100%;
   max-width: 800px;
   justify-self: end;
+  transform: translateY(-10px);
 }
 
 .media-card {
