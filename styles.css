@@ -133,14 +133,15 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-
-.btn-industrial {
-  background: linear-gradient(135deg, #d7a643, #f2c96d);
-  color: #15110a;
-  border: 1px solid rgba(242, 201, 109, .75);
-  box-shadow:
-    0 14px 34px rgba(0,0,0,.45),
-    inset 0 1px 0 rgba(255,255,255,.35);
+.btn-industrial{
+  background:linear-gradient(135deg,#d7a643,#f2c96d);
+  color:#15110a;
+  font-weight:800;
+  padding:16px 28px;
+  border-radius:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  border:1px solid rgba(255,255,255,.2);
 }
 
 .btn-industrial:hover {
