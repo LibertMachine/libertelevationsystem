@@ -98,7 +98,17 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   letter-spacing: -0.06em;
   max-width: 9ch;
 }
-
+.hero-badge{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 16px;
+  border:1px solid rgba(242,201,109,.3);
+  border-radius:999px;
+  color:#f2c96d;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
 .eyebrow {
   color: var(--accent-2);
   text-transform: uppercase;
