@@ -47,6 +47,16 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   gap: 42px;
   align-items: center;
 }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 19px;
+  border-radius: 999px;
+  font-weight: 800;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
 .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #15110a; border: 0; }
 .hero-card {
   background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
