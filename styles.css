@@ -39,7 +39,7 @@ img { max-width: 100%; display: block; }
 .mobile-cta { display:none; }
 section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px; }
 .hero {
-  max-width: var(--max);
+  max-width: 8ch;
   margin: 0 auto;
   padding: 76px 22px 54px;
   display: grid;
