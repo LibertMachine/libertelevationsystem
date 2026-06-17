@@ -80,7 +80,7 @@ h1 { font-size: clamp(42px, 6vw, 72px); line-height: .96; margin: 0 0 22px; lett
 }
 .hero-card img {
     width: 100%;
-    max-width: 650px;
+    max-width: 750px;
     border-radius: 16px;
 }
 .caption { padding: 14px 8px 4px; color: var(--muted); font-size: 14px; }
