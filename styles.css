@@ -93,10 +93,9 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   border-radius: 16px;
 }
 .hero h1 {
-  font-size: clamp(46px, 6vw, 86px);
-  line-height: .92;
-  letter-spacing: -0.06em;
-  max-width: 9ch;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: .95;
+  max-width: 12ch;
 }
 .hero-badge{
   display:inline-block;
