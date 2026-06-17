@@ -109,6 +109,24 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   font-weight:800;
   letter-spacing:.12em;
 }
+.hero-stats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:24px 0;
+}
+
+.hero-stats span{
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  background:rgba(255,255,255,.03);
+  color:#d8dde6;
+  font-size:12px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
 .eyebrow {
   color: var(--accent-2);
   text-transform: uppercase;
