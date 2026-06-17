@@ -54,7 +54,7 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   border-radius: 28px;
   padding: 8px;
   box-shadow: 0 28px 70px rgba(0,0,0,.38);
-
+  transform: translateY(-20px);
   width: 100%;
   max-width: 800px;
   justify-self: end;
