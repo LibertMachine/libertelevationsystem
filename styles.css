@@ -266,19 +266,10 @@ form .btn {
 }
 footer a { color:var(--accent-2); }
 @media (max-width: 860px) {
-  .hero, .split, .cta, .grid-2 { grid-template-columns: 1fr; }
-  .grid-3 { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .mobile-cta { display:inline-flex; padding:10px 13px; font-size:13px; }
-  .hero { padding-top: 48px; }
-  .cta { padding: 28px; }
-  .catalog-item { grid-template-columns:1fr; }
-  .form-grid { grid-template-columns:1fr; }
-  textarea {
-  grid-column: span 1;
-    @media (max-width: 860px) {
-
-  .hero, .split, .cta, .grid-2 {
+  .hero, 
+  .split, 
+  .cta, 
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 
@@ -290,7 +281,16 @@ footer a { color:var(--accent-2); }
     display: none;
   }
 
-  /* ADD THIS PART */
+  .mobile-cta {
+    display: inline-flex;
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 48px 22px 42px;
+    gap: 32px;
+  }
 
   .hero h1 {
     font-size: clamp(54px, 18vw, 78px);
@@ -298,9 +298,19 @@ footer a { color:var(--accent-2); }
     max-width: 8ch;
   }
 
+  .lead {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
   .hero-stats {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-badge {
+    max-width: 300px;
+    line-height: 1.4;
   }
 
   .buttons {
@@ -314,9 +324,23 @@ footer a { color:var(--accent-2); }
 
   .hero-card {
     transform: none;
+    justify-self: stretch;
     max-width: 100%;
   }
 
-}
-}
+  .cta {
+    padding: 28px;
+  }
+
+  .catalog-item {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  textarea {
+    grid-column: span 1;
+  }
 }
