@@ -276,5 +276,47 @@ footer a { color:var(--accent-2); }
   .form-grid { grid-template-columns:1fr; }
   textarea {
   grid-column: span 1;
+    @media (max-width: 860px) {
+
+  .hero, .split, .cta, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* ADD THIS PART */
+
+  .hero h1 {
+    font-size: clamp(54px, 18vw, 78px);
+    line-height: .9;
+    max-width: 8ch;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-card {
+    transform: none;
+    max-width: 100%;
+  }
+
+}
 }
 }
