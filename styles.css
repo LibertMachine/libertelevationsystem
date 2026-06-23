@@ -33,7 +33,13 @@ img { max-width: 100%; display: block; }
 }
 .logo-lockup { display:flex; align-items:center; gap:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; }
 .logo-mark { width:42px; height:42px; border-radius:10px; background:#111823; border:1px solid var(--line); display:grid; place-items:center; color:var(--accent-2); font-weight:900; }
-.logo-lockup span { color: var(--accent-2); }
+.logo-main {
+  color: var(--text);
+}
+
+.logo-accent {
+  color: var(--accent-2);
+}
 .nav-links { display: flex; gap: 20px; color: var(--muted); font-size: 14px; align-items:center; }
 .nav-links a:hover { color: var(--text); }
 .mobile-cta { display:none; }
