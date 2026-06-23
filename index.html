@@ -181,5 +181,50 @@ Start Making Chips.</h1>
   <footer>
     © 2026 Libert Machine LLC. Libert Elevation System. <a href="catalog.html">Product catalog</a>
   </footer>
+<!-- Libert AI Assistant -->
+<div class="chat-widget">
+  <button class="chat-toggle" onclick="toggleChat()">Ask Libert AI</button>
+
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <strong>Libert Assistant</strong>
+      <button onclick="toggleChat()">×</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot-message">
+        Hi! I can help explain the Libert Elevation System. What would you like to know?
+      </div>
+    </div>
+
+    <div class="chat-options">
+      <button onclick="botReply('how')">How does it work?</button>
+      <button onclick="botReply('time')">How does it save time?</button>
+      <button onclick="botReply('demo')">Request a demo</button>
+      <button onclick="botReply('fit')">Will it fit my shop?</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleChat() {
+    document.getElementById("chatBox").classList.toggle("open");
+  }
+
+  function botReply(type) {
+    const messages = document.getElementById("chatMessages");
+
+    const replies = {
+      how: "The Libert Elevation System raises parts off the machine table, improving tool access, reducing repositioning, and helping machinists work more efficiently.",
+      time: "Even saving 15 minutes per setup can add up fast. With repeated setups each week, shops may recover dozens of hours of productive time annually.",
+      demo: "Great! Use the contact form on this page and mention that you’d like a Libert Elevation System demo or early access.",
+      fit: "It is designed for CNC machining environments where setup time, access, and repeatability matter. A quick review of your table size and workflow would help determine fit."
+    };
+
+    messages.innerHTML += `<div class="user-message">${event.target.innerText}</div>`;
+    messages.innerHTML += `<div class="bot-message">${replies[type]}</div>`;
+    messages.scrollTop = messages.scrollHeight;
+  }
+</script>
 </body>
 </html>
