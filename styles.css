@@ -127,7 +127,104 @@ section, .page-wrap { max-width: var(--max); margin: 0 auto; padding: 58px 22px;
   gap:10px;
   margin:24px 0;
 }
+.chat-widget {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  font-family: inherit;
+}
 
+.chat-toggle {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.chat-box {
+  display: none;
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.chat-box.open {
+  display: block;
+}
+
+.chat-header {
+  background: #111827;
+  color: white;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  padding: 14px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+.bot-message,
+.user-message {
+  padding: 10px 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.bot-message {
+  background: white;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.user-message {
+  background: #111827;
+  color: white;
+  margin-left: 40px;
+}
+
+.chat-options {
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+  background: white;
+}
+
+.chat-options button {
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-options button:hover {
+  background: #e5e7eb;
+}
 .hero-stats span{
   padding:8px 14px;
   border:1px solid rgba(255,255,255,.12);
