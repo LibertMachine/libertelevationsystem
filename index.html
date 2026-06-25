@@ -198,10 +198,10 @@ Start Making Chips.</h1>
     </div>
 
     <div class="chat-options">
-      <button onclick="botReply('how')">How does it work?</button>
-      <button onclick="botReply('time')">How does it save time?</button>
-      <button onclick="botReply('demo')">Request a demo</button>
-      <button onclick="botReply('fit')">Will it fit my shop?</button>
+      <button onclick="botReply('how', this)">How does it work?</button>
+      <button onclick="botReply('time', this)">How does it save time?</button>
+      <button onclick="botReply('demo', this)">Request a demo</button>
+      <button onclick="botReply('fit', this)">Will it fit my shop?</button>
     </div>
   </div>
 </div>
@@ -211,7 +211,7 @@ Start Making Chips.</h1>
     document.getElementById("chatBox").classList.toggle("open");
   }
 
-  function botReply(type) {
+  function botReply(type, button) {
     const messages = document.getElementById("chatMessages");
 
     const replies = {
@@ -221,7 +221,7 @@ Start Making Chips.</h1>
       fit: "It is designed for CNC machining environments where setup time, access, and repeatability matter. A quick review of your table size and workflow would help determine fit."
     };
 
-    messages.innerHTML += `<div class="user-message">${event.target.innerText}</div>`;
+    messages.innerHTML += `<div class="user-message">${button.innerText}</div>`;
     messages.innerHTML += `<div class="bot-message">${replies[type]}</div>`;
     messages.scrollTop = messages.scrollHeight;
   }
