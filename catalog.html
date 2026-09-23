@@ -9,18 +9,48 @@
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="logo-lockup" href="index.html" aria-label="Libert Elevation System — Home"><img src="assets/les-full-logo-light.png" alt="The Libert Elevation System — A Step Above" width="460" height="165"></a>
-      <div class="nav-links">
-        <a href="index.html#problem">Problem</a>
-        <a href="index.html#system-diagram">How it works</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="index.html#quote">Request quote</a>
-      </div>
-      <a class="btn btn-primary mobile-cta" href="index.html#quote">Quote</a>
+  
+ 
+<nav class="nav">
+  <div class="nav-inner">
+
+    <a class="logo-lockup"
+       href="index.html"
+       aria-label="Libert Elevation System — Home">
+      <img
+        src="assets/les-full-logo-light.png"
+        alt="Libert Elevation System"
+        width="460"
+        height="165"
+      >
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#problem">Applications</a>
+      <a href="index.html#system-diagram">How It Works</a>
+      <a href="catalog.html">Products</a>
+      <a href="index.html#quote">Shop Systems</a>
+
+      <a href="index.html#quote" class="nav-quote-btn">
+        REQUEST A QUOTE
+        <span aria-hidden="true">↗</span>
+      </a>
     </div>
-  </nav>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav> 
 
   <main class="page-wrap">
     <div class="eyebrow">Product catalog</div>
@@ -59,12 +89,20 @@
       </div>
     </section>
 
-    <section style="padding-left:0;padding-right:0;">
+    <section class="catalog-custom-quote"></section>
       <h2 class="section-title">Need a custom setup?</h2>
       <p class="section-copy">Send a photo, sketch, or description of your part and setup challenge. Libert Machine can help identify which elevation configuration makes sense for your application.</p>
       <a class="btn btn-primary" href="index.html#quote">Request a custom quote</a>
     </section>
   </main>
+
+<!-- CATALOG BOTTOM LOGO -->
+<div class="catalog-bottom-logo">
+  <img
+    src="assets/les-mark-white.png"
+    alt="Libert Elevation System"
+  >
+</div>
 
   <footer>
     © 2026 Libert Machine LLC. Libert Elevation System. <a href="index.html">Home</a>

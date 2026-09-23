@@ -1800,3 +1800,59 @@ footer a { color:var(--accent-2); }
     font-size: 38px;
   }
 }
+
+/* CATALOG BOTTOM LOGO */
+
+.catalog-bottom-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px 35px;
+  border-top: 1px solid rgba(213, 168, 93, 0.15);
+}
+
+.catalog-bottom-logo img {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .catalog-bottom-logo {
+    padding: 25px 20px;
+  }
+
+  .catalog-bottom-logo img {
+    max-width: 150px;
+  }
+}
+/* CATALOG CUSTOM QUOTE */
+
+.catalog-custom-quote {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 35px 0 40px;
+}
+
+.catalog-custom-quote .section-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.catalog-custom-quote .section-copy {
+  margin-bottom: 24px;
+}
+
+/* Keep the bottom logo close to the section */
+
+.catalog-bottom-logo {
+  padding: 25px 20px 30px;
+}
+
+@media (max-width: 600px) {
+  .catalog-custom-quote {
+    padding: 35px 20px;
+  }
+}
