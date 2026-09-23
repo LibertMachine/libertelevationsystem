@@ -48,18 +48,48 @@
 </script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="logo-lockup" href="index.html" aria-label="Libert Elevation System — Home"><img src="assets/les-full-logo-light.png" alt="The Libert Elevation System — A Step Above" width="460" height="165"></a>
-      <div class="nav-links">
-        <a href="#problem">Applications</a>
-        <a href="#system-diagram">How it works</a>
-        <a href="catalog.html">Products</a>
-        <a href="#quote">Shop Systems</a>
-      </div>
-      <a class="btn btn-primary mobile-cta" href="#quote">Quote</a>
+  
+ 
+<nav class="nav">
+  <div class="nav-inner">
+
+    <a class="logo-lockup"
+       href="index.html"
+       aria-label="Libert Elevation System — Home">
+      <img
+        src="assets/les-full-logo-light.png"
+        alt="Libert Elevation System"
+        width="460"
+        height="165"
+      >
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#problem">Applications</a>
+      <a href="#system-diagram">How It Works</a>
+      <a href="catalog.html">Products</a>
+      <a href="#quote">Shop Systems</a>
+
+      <a href="#quote" class="nav-quote-btn">
+        REQUEST A QUOTE
+        <span aria-hidden="true">↗</span>
+      </a>
     </div>
-  </nav>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav> 
 
   <main>
     <section class="hero">
@@ -862,6 +892,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.getElementById("navLinks");
+
+  if (!toggle || !links) return;
+
+  function closeMenu() {
+    links.classList.remove("open");
+    toggle.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute(
+      "aria-label",
+      "Open navigation menu"
+    );
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = links.classList.toggle("open");
+
+    toggle.classList.toggle("active", isOpen);
+    toggle.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+    toggle.setAttribute(
+      "aria-label",
+      isOpen
+        ? "Close navigation menu"
+        : "Open navigation menu"
+    );
+  });
+
+  links.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeMenu();
+  });
+});
 </script>
 </body>
 </html>
