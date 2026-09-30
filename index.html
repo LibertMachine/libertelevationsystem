@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+  
+  
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png">
    <meta charset="UTF-8" />
@@ -24,7 +34,7 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org", 
   "@type": "Product",
   "name": "Libert Elevation System",
   "brand": {
@@ -43,7 +53,7 @@
   },
   "description": "The Libert Elevation System is a modular workholding platform designed to reduce setup time, improve cutter access, and help machine more surfaces before the part has to move.",
   "category": "CNC workholding system",
-  "image": "https://yourdomain.com/les-hero.png"
+  "image": "https://libertelevationsystem.com/les-hero.png"
 }
 </script>
 </head>
@@ -65,16 +75,15 @@
     </a>
 
     <div class="nav-links" id="navLinks">
-      <a href="#problem">Applications</a>
-      <a href="#system-diagram">How It Works</a>
-      <a href="catalog.html">Products</a>
-      <a href="#quote">Shop Systems</a>
+  <a href="#problem">Applications</a>
+  <a href="#system-diagram">How It Works</a>
+  <a href="catalog.html">Systems</a>
 
-      <a href="#quote" class="nav-quote-btn">
-        REQUEST A QUOTE
-        <span aria-hidden="true">↗</span>
-      </a>
-    </div>
+  <a href="#quote" class="nav-quote-btn">
+    REQUEST A QUOTE
+    <span aria-hidden="true">↗</span>
+  </a>
+</div>
 
     <button
       class="nav-toggle"
@@ -103,10 +112,13 @@
   Standards
 </h1>
 
-        <p class="lead">
-  Designed to elevate your material off the machine table, providing greater cutter access and reducing the need for repositioning. Spend less time on setups and more time making chips.
+<p class="lead">
+  Elevate your workpiece. Improve cutter access. Reduce repositioning.
+  Keep your spindles running.
+</p>
 
-Less repositioning. More efficient setups. Greater productivity.
+<p class="hero-benefits">
+  Less repositioning. More efficient setups. Greater productivity.
 </p>
 
  <!-- PREMIUM HERO ACTIONS -->
@@ -742,30 +754,58 @@ Less repositioning. More efficient setups. Greater productivity.
 </section>
   </main>
 
-  <footer>
-    © 2026 Libert Machine LLC. Libert Elevation System. <a href="catalog.html">Product catalog</a>
-  </footer>
-<!-- Libert AI Assistant -->
+  <footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <h3>LIBERT ELEVATION SYSTEM</h3>
+      <p>
+        Engineered to improve cutter access, reduce repositioning,
+        and keep your spindle running.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#problem">Applications</a>
+      <a href="#system-diagram">How It Works</a>
+      <a href="catalog.html">Systems</a>
+      <a href="#quote">Request a Quote</a>
+    </div>
+
+    <div class="footer-company">
+      <p>Built by Libert Machine LLC</p>
+      <p>Wisconsin Manufacturing</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Libert Machine LLC. All rights reserved.</span>
+    <a href="catalog.html">Product Catalog</a>
+  </div>
+</footer>
+
+  <!-- LES Product Assistant -->
 <div class="chat-widget">
-  <button class="chat-toggle" onclick="toggleChat()">Ask Libert AI</button>
+  <button class="chat-toggle" onclick="toggleChat()">Ask About LES</button>
 
   <div class="chat-box" id="chatBox">
     <div class="chat-header">
-      <strong>Libert Assistant</strong>
+      <strong>LES Product Assistant</strong>
       <button onclick="toggleChat()">×</button>
     </div>
 
     <div class="chat-messages" id="chatMessages">
       <div class="bot-message">
-        Hi! I can help explain the Libert Elevation System. What would you like to know?
+        Hi! I can help you understand the Libert Elevation System and find the right setup for your application. What would you like to know?
       </div>
     </div>
 
     <div class="chat-options">
       <button onclick="botReply('how', this)">How does it work?</button>
       <button onclick="botReply('time', this)">How does it save time?</button>
+      <button onclick="botReply('fit', this)">Which setup fits my shop?</button>
       <button onclick="botReply('demo', this)">Request a demo</button>
-      <button onclick="botReply('fit', this)">Will it fit my shop?</button>
     </div>
   </div>
 </div>
