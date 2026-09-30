@@ -811,9 +811,14 @@
 </div>
 
 <script>
-  function toggleChat() {
-    document.getElementById("chatBox").classList.toggle("open");
-  }
+ 
+ function toggleChat() {
+  const chatBox = document.getElementById("chatBox");
+  const chatWidget = document.querySelector(".chat-widget");
+
+  chatBox.classList.toggle("open");
+  chatWidget.classList.toggle("chat-open");
+}
 
   function botReply(type, button) {
     const messages = document.getElementById("chatMessages");
